@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tsuki Conejo",
+    "price": 1200.50,
+    "artist": "Tsuki Odyssey",
+    "type": "instock",
+    "img": "img/p01.jpeg"
+  },
+  {
+    "name": "Fruta Estelar",
+    "price": 1200.50,
+    "artist": "Stardew Valley",
+    "type": "ondemand",
+    "img": "img/p02.jpeg"
+  },
+  {
+    "name": "Capibara Frutilla",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p03.jpeg"
+  },
+  {
+    "name": "Conejita Rosa",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p04.jpeg"
+  },
+  {
+    "name": "Patito Vaquero",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p05.jpeg"
+  },
+  {
+    "name": "Ronald Weasley",
+    "price": 1200.50,
+    "artist": "Harry Potter",
+    "type": "instock",
+    "img": "img/p06.jpeg"
+  },
+  {
+    "name": "Lagartijo loco",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "ondemand",
+    "img": "img/p07.jpeg"
+  },
+  {
+    "name": "Gatito Negro",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "ondemand",
+    "img": "img/p08.jpeg"
+  },
+  {
+    "name": "Cute Dino",
+    "price": 1200.50,
+    "artist": "@cute_stitchesbyalma",
+    "type": "ondemand",
+    "img": "img/p09.jpeg"
+  }
+]

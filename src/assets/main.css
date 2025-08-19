@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-cute-pink: #FFD9DE;
+    --color-album-bg: #F7F7F7;
+    --color-cute-green: #CCEBDC;
+    --color-artist-gray: #999999;
+    --color-price-gray: #6A6A6A;
+
+    --font-rouge-script: 'Rouge Script';
+}
+
+@font-face {
+    font-family: 'Rouge Script';
+    src: url(/fonts/RougeScript-Regular.ttf) format('truetype');
+}
