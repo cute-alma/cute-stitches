@@ -6,8 +6,8 @@ import ondemandView from './views/ondemand-view.vue';
 
 <template>
   <div class="flex flex-col gap-[10px] bg-white min-h-screen max-w-[1000px] rounded-md p-[10px]">
-    <!-- <homeView/> -->
-     <stockView/>
+    <homeView/>
+     <!-- <stockView/> -->
     <!-- <ondemandView/> -->
      
   </div>
