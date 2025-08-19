@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col md:flex-row gap-[10px]">
-            <div class="flex flex-col gap-[10px] p-[10px] bg-album-bg rounded-md h-fit w-full max-w-[333px]">
+    <div class="flex flex-col justify-center md:flex-row gap-[10px]">
+        <div @click="navToDemand" class="flex flex-col gap-[10px] p-[10px] bg-album-bg rounded-md h-fit w-full max-w-[333px]">
             <p>Tus favoritos a &nbsp; <span class="font-rouge-script text-3xl">Pedido</span></p>
             <div class="grid grid-cols-3 gap-[10px] items-stretch">
                 <div v-for="p in ondemand.slice(0,6)" :key="p.name" class="relative h-25">
@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col gap-[10px] p-[10px] bg-album-bg rounded-md h-fit w-full max-w-[333px]">
+        <div @click="navToStock" class="flex flex-col gap-[10px] p-[10px] bg-album-bg rounded-md h-fit w-full max-w-[333px]">
             <p>Tus favoritos en &nbsp; <span class="font-rouge-script text-3xl">Stock</span></p>
             <div class="grid grid-cols-3 gap-[10px] items-stretch">
                 <div v-for="(p,index) in instock.slice(0,6)" class="relative h-25" :key="p.name">
@@ -23,6 +23,9 @@
 </template>
 
 <script setup>
+
+    import { useRouter } from 'vue-router';
+
     const props = defineProps(['data']);
     const baseUrl = import.meta.env.BASE_URL
     const ondemand = props.data.filter((e) => {
@@ -31,8 +34,6 @@
     const instock = props.data.filter((e) => {
         return e.type == "instock"
     })
-
-    console.log("EL VALOR ES : ", ondemand)
 
     const loadImg = (img) => {
         return baseUrl+img
@@ -44,5 +45,15 @@
         } else {
             return name
         }
+    }
+
+    const router = useRouter();
+
+    const navToDemand = () => {
+        router.push('/on-demand')
+    }
+
+    const navToStock = () => {
+        router.push('/in-stock')
     }
 </script>

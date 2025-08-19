@@ -1,6 +1,6 @@
 <template>
     <headerCmp/>
-    <div class="flex flex-col w-full py-[30px] px-[10px] bg-pink-50 rounded-md sm:max-w-[800px] sm:pl-[44px] ">
+    <div class="flex flex-col w-full py-[30px] px-[10px] bg-pink-desc rounded-md sm:max-w-[800px] sm:pl-[44px] ">
         <h3 class="text-lg">¡Bienvenidos al espacio virtual de la ternura!</h3>
         <p class="text-sm">
             Encuentra a las más tiernas creaciones en lana. Hechas con pasión, 

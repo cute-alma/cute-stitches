@@ -1,14 +1,13 @@
 <script setup>
-import homeView from './views/home-view.vue';
-import stockView from './views/stock-view.vue';
-import ondemandView from './views/ondemand-view.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div class="flex flex-col gap-[10px] bg-white min-h-screen max-w-[1000px] rounded-md p-[10px]">
-    <homeView/>
+  <div class="flex flex-col items-center gap-[10px] bg-white min-h-screen max-w-[1000px] rounded-md p-[10px] mx-auto">
+    <RouterView/>
      <!-- <stockView/> -->
     <!-- <ondemandView/> -->
+    <!-- <songView/> -->
      
   </div>
 </template>
