@@ -19,7 +19,8 @@
 
         <songCmp 
             v-for="product in data"
-            :key="product.name"
+            :key="product.id"
+            :id="product.id"
             :name="product.name"
             :artist="product.artist"
             :price="product.price" 

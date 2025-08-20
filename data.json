@@ -1,63 +1,72 @@
 [
   {
+    "id": 0,
     "name": "Tsuki Conejo",
-    "price": 1200.50,
+    "price": 3,
     "artist": "Tsuki Odyssey",
     "type": "instock",
     "img": "img/p01.jpeg"
   },
   {
+    "id": 1,
     "name": "Fruta Estelar",
-    "price": 1200.50,
+    "price": 15,
     "artist": "Stardew Valley",
     "type": "ondemand",
     "img": "img/p02.jpeg"
   },
   {
+    "id": 2,
     "name": "Capibara Frutilla",
-    "price": 1200.50,
+    "price": 3,
     "artist": "@cute_stitchesbyalma",
     "type": "instock",
     "img": "img/p03.jpeg"
   },
   {
+    "id": 3,
     "name": "Conejita Rosa",
-    "price": 1200.50,
+    "price": 16,
     "artist": "@cute_stitchesbyalma",
     "type": "instock",
     "img": "img/p04.jpeg"
   },
   {
-    "name": "Patito Vaquero",
-    "price": 1200.50,
+    "id": 4,
+    "name": "Pollito Vaquero",
+    "price": 2,
     "artist": "@cute_stitchesbyalma",
     "type": "instock",
     "img": "img/p05.jpeg"
   },
   {
+    "id": 5,
     "name": "Ronald Weasley",
-    "price": 1200.50,
+    "price": 9,
     "artist": "Harry Potter",
     "type": "instock",
     "img": "img/p06.jpeg"
   },
   {
-    "name": "Lagartijo loco",
-    "price": 1200.50,
+    "id": 6,
+    "name": "Gir",
+    "price": 8,
     "artist": "@cute_stitchesbyalma",
     "type": "ondemand",
     "img": "img/p07.jpeg"
   },
   {
+    "id": 7,
     "name": "Gatito Negro",
-    "price": 1200.50,
+    "price": 12,
     "artist": "@cute_stitchesbyalma",
     "type": "ondemand",
     "img": "img/p08.jpeg"
   },
   {
+    "id": 8,
     "name": "Cute Dino",
-    "price": 1200.50,
+    "price": 15,
     "artist": "@cute_stitchesbyalma",
     "type": "ondemand",
     "img": "img/p09.jpeg"

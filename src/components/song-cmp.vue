@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row w-full max-w-[800px] h-fit p-[10px] justify-between items-center">
+    <div @click="navToSongView" class="flex flex-row w-full max-w-[800px] h-fit p-[10px] justify-between items-center">
         <div class="flex flex-row gap-[15px]">
             <img class="h-[60px] rounded-md" :src="loadImg(props.img)" alt="">
             <div class="flex flex-col gap-[5px] justify-start max-h-[100px] text-xs">
@@ -13,11 +13,21 @@
 </template>
 
 <script setup>
-    const props = defineProps(['name','artist','price', 'img'])
+
+    import { useRouter } from 'vue-router'
+
+    const router = useRouter();
+
+    const props = defineProps(['id','name','artist','price', 'img'])
 
     const baseUrl = import.meta.env.BASE_URL
 
     const loadImg = (img) => {
         return baseUrl + img
     }
+
+    const navToSongView = () => {
+        router.push(`/song/${props.id}`)
+    }
+
 </script>
