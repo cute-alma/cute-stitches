@@ -12,6 +12,17 @@
     <albumsCmp :data="artworks"/>
     <!--FIN CMP Albumss-->
 
+    <!-- Footer -->
+    <div class="flex flex-row justify-center sm:justify-end gap-5 items-center min-h-32 w-full">
+        <p class="text-sm">
+            ¡Encuéntranos en IG!<br>
+            <span class="font-rouge-script text-3xl">@cute_stitchesbyalma</span>
+        </p>
+        <a href="https://www.instagram.com/cute_stitchesbyalma">
+            <img class="max-h-[30px] max-w-[30px]" src="/icons/instagram_icon.svg" alt="enlace a @cute_stitchesbyalma">
+        </a>
+    </div>
+
 </template>
 
 <script setup>

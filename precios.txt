@@ -7,18 +7,18 @@ capibara 3000                   DONE
 Bunny 16.000                    DONE
 pollo vaquero 2000              DONE
 Ron Weasley 9000
-vaca morada 12.000
-vaca celeste 10.000
+vaca morada 12.000          
+vaca celeste 10.000         DONE
 cyndaquil 12.000
-totoro 8.000
-pulpitos 1000 2000-3000
-pollosaurio 4000
-helados 3000
-helado grande 4000
-pollonejo 3000
-gallina azul con rojo 3000
-gallina azul con morado 2000
-porta bálsamos de labios 2000   
+totoro 8.000                DONE
+pulpitos 1000 2000-3000     DONE
+pollosaurio 4000            DONE
+helados 3000                DONE
+helado grande 4000          DONE
+pollonejo 3000              DONE
+gallina azul con rojo 3000      DONE
+gallina azul con morado 2000    DONE
+porta bálsamos de labios 2000       DONE
 llaveros bff 4000
-capibara grande 5000
+capibara grande 5000            DONE
 Gir (perro verde) 8000          DONE

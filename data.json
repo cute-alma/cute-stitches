@@ -70,5 +70,109 @@
     "artist": "@cute_stitchesbyalma",
     "type": "ondemand",
     "img": "img/p09.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Vaquita Celeste",
+    "price": 10,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p10.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Helado Rosa Grande",
+    "price": 4,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p11.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Porta bálsamos",
+    "price": 2,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p12.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Gallina azul y morado",
+    "price": 2,
+    "artist": "Stardew Valley",
+    "type": "instock",
+    "img": "img/p13.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Gallina azul y rojo",
+    "price": 3,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p14.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Pollonejo",
+    "price": 3,
+    "artist": "@cute_stitchesbyalma",
+    "type": "ondemand",
+    "img": "img/p15.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Capibara con gorrito de rana",
+    "price": 5,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p16.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Llaveros de heladito",
+    "price": 3,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p17.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Pollosaurio",
+    "price": 4,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p18.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Capibara pequeño",
+    "price": 3,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p19.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Pulpitos",
+    "price": 2,
+    "artist": "@cute_stitchesbyalma",
+    "type": "instock",
+    "img": "img/p14.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Totoro",
+    "price": 8,
+    "artist": "Studio Ghibli",
+    "type": "instock",
+    "img": "img/p21.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Cyndaquil",
+    "price": 12,
+    "artist": "Pokémon",
+    "type": "instock",
+    "img": "img/p22.jpeg"
   }
 ]

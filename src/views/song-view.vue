@@ -11,39 +11,28 @@
         
         <!-- Layout -->
         <div class="flex flex-row w-full h-full gap-[10px]">
-            <div class="hidden md:block w-full max-w-[350px] bg-gray-400">
-                
+            <div class="hidden md:flex md:flex-col md:items-end w-full max-w-[350px] max-h-screen overflow-y-auto">
+                <p v-if="songDetails.type == 'ondemand'">tus favoritos a <span class="font-rouge-script text-3xl">Pedido</span></p>
+                <p v-else>tus favoritos en <span class="font-rouge-script text-3xl">Stock</span></p>
+
+                <songCmp
+                    v-for="song in albumList"
+                    :key="song.id"
+                    :id="song.id"
+                    :name="song.name"
+                    :artist="song.artist"
+                    :img="song.img"
+                    :price="song.price"
+                />
             </div>
             <div class="flex flex-col w-full items-center gap-[5px]">
-                <!-- Cover Image -->
-                <img :src="loadImg(songDetails.img)" class="min-h-[280px] min-w-[280px] max-h-[325px] max-w-[325px] rounded-md bg-gray-400" alt="">
-
-                <!-- Progress bar SVG -->
-                <img src="/icons/progress_bar.svg" class="h-fit w-full min-w-[280px] max-w-[500px]" alt="Barra de progreso con un corazón">
-
-                <div class="flex flex-row w-full justify-between max-w-[500px]">
-                    <div class="flex flex-col">
-                        <p>
-                            <span class="text-sm" v-text="songDetails.name"></span><br>
-                            <span class="text-xs text-artist-gray" v-text="songDetails.artist"></span>
-                        </p>
-                    </div>
-                    <div class="h-fit text-center px-5 py-[5px] border-1 border-pink-strong rounded-md"><span>$ {{ songDetails.price }} k</span></div>
-                </div>
-
-                <!-- Controls -->
-                <div class="flex flex-row w-full h-fit justify-between p-[10px] md:justify-evenly">
-                    <img src="/icons/previous.svg" alt="Ícono canción anterior">
-                    <img src="/icons/stop.svg" alt="Ícono pausa">
-                    <img src="/icons/next.svg" alt="Ícono siguiente canción">
-                </div>
-
-                <!-- Buttons -->
-                <div class="flex flex-row gap-[5px] py-[15px] w-full justify-center">
-                    <img class="max-w-[65px]" src="/icons/likes.svg" alt="Ícono de likes">
-                    <img src="/icons/comments.svg" alt="Ícono de comentarios">
-                    <img src="/icons/share.svg" alt="Ícono de compartir">
-                </div>  
+                <SongDetails
+                    :id="songDetails.id"
+                    :name="songDetails.name"
+                    :artist="songDetails.artist"
+                    :price="songDetails.price"
+                    :img="songDetails.img"
+                />
             </div>
         </div>
     </div>
@@ -51,27 +40,35 @@
 
 <script setup>
     import data from '../../data.json';
-    import { onBeforeMount, ref } from 'vue';
-    import {useRouter} from 'vue-router';
+    import { onBeforeMount, ref, watch } from 'vue';
+    import {useRouter, useRoute} from 'vue-router';
+    import songCmp from '@/components/song-cmp.vue';
+    import SongDetails from '@/components/song-details.vue';
 
     const props = defineProps(['id'])
-    const baseUrl = import.meta.env.BASE_URL
     const router = useRouter();
+    const route = useRoute();
 
-    const songDetails = ref({})
+    const songDetails = ref({});
+    const albumList = ref([]);
+
+    watch(
+        () => route.params.id,
+        (newId) => {
+            songDetails.value = data.find((p) => p.id == newId)
+        }
+    )
 
     onBeforeMount(()=>{
-        songDetails.value = data.filter((e) => {
+        songDetails.value = data.find((e) => {
             return e.id == props.id
-        })[0]
-        console.log('DEBUG onBeforeMount: ', songDetails.value)
+        })
+
+        const album = songDetails.value.type
+        albumList.value = data.filter((e) => {
+            return e.type == album
+        })
     })
-
-    console.log(songDetails.value)
-
-    const loadImg = (img) => {
-        return baseUrl + img
-    }
 
     const goBack = () => {
         router.back()
