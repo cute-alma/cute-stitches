@@ -1,33 +1,34 @@
 <template>
-    <div @click="navToSongView" class="flex flex-row w-full max-w-[800px] h-fit p-[10px] justify-between items-center">
-        <div class="flex flex-row gap-[15px]">
-            <img class="h-[60px] rounded-md" :src="loadImg(props.img)" alt="">
-            <div class="flex flex-col gap-[5px] justify-start max-h-[100px] text-xs">
-                <p v-text="props.name"></p>
-                <p v-text="props.artist" class="text-artist-gray"></p>
-                <p class="text-price-gray">{{ props.price }} K</p>
-            </div>
-        </div>
-        <img class="h-[24px] w-[24px]" src="/icons/play.png" alt="">
+  <div
+    @click="navToSongView"
+    class="flex flex-row w-full max-w-[800px] h-fit p-[10px] justify-between items-center hover:bg-album-bg transform transition-transform hover:-translate-y-0.5"
+  >
+    <div class="flex flex-row gap-[15px]">
+      <img class="h-[60px] rounded-md" :src="loadImg(props.img)" alt="" />
+      <div class="flex flex-col gap-[5px] justify-start max-h-[100px] text-xs">
+        <p v-text="props.name"></p>
+        <p v-text="props.artist" class="text-artist-gray"></p>
+        <p class="text-price-gray">{{ props.price }} K</p>
+      </div>
     </div>
+    <img class="h-[24px] w-[24px]" src="/icons/play.png" alt="" />
+  </div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 
-    import { useRouter } from 'vue-router'
+const router = useRouter()
 
-    const router = useRouter();
+const props = defineProps(['id', 'name', 'artist', 'price', 'img'])
 
-    const props = defineProps(['id','name','artist','price', 'img'])
+const baseUrl = import.meta.env.BASE_URL
 
-    const baseUrl = import.meta.env.BASE_URL
+const loadImg = (img) => {
+  return baseUrl + img
+}
 
-    const loadImg = (img) => {
-        return baseUrl + img
-    }
-
-    const navToSongView = () => {
-        router.push(`/song/${props.id}`)
-    }
-
+const navToSongView = () => {
+  router.push(`/song/${props.id}`)
+}
 </script>
