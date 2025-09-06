@@ -4,7 +4,7 @@
     "name": "Tsuki Conejo",
     "price": 3,
     "artist": "Tsuki Odyssey",
-    "type": "instock",
+    "type": "ondemand",
     "img": "img/p01.jpeg"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Conejita Rosa",
     "price": 16,
     "artist": "@cute_stitchesbyalma",
-    "type": "instock",
+    "type": "ondemand",
     "img": "img/p04.jpeg"
   },
   {
@@ -107,7 +107,7 @@
     "id": 13,
     "name": "Gallina azul y rojo",
     "price": 3,
-    "artist": "@cute_stitchesbyalma",
+    "artist": "Stardew Valley",
     "type": "instock",
     "img": "img/p14.jpeg"
   },

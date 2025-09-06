@@ -19,7 +19,10 @@
             v-text="loadName(p.name)"
             class="absolute bottom-0 inset-x-0 text-center text-sm bg-cute-green/80"
           ></p>
-          <p v-else class="absolute inset-0 flex items-center justify-center bg-album-bg/40">
+          <p
+            v-else
+            class="absolute inset-0 font-rouge-script text-2xl flex items-center justify-center bg-album-bg/80"
+          >
             Ver más...
           </p>
         </div>
